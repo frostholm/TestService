@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAPI", "TestService\TestAPI.csproj", "{F758B5D2-93C7-4805-BB5C-4970E9F84B0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expressbank.TestService.API", "TestService\Expressbank.TestService.API.csproj", "{F758B5D2-93C7-4805-BB5C-4970E9F84B0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{C9CB8856-8B74-4282-9A71-9BF0E8E74A65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expressbank.TestService.Features", "Services\Expressbank.TestService.Features.csproj", "{C9CB8856-8B74-4282-9A71-9BF0E8E74A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0DC4A237-68C7-4A66-9769-191DD17CEC59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F781F4D2-417C-41AC-AA00-68AB8D9CEF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expressbank.TestService.Infrastructure", "Expressbank.TestService.Infrastructure\Expressbank.TestService.Infrastructure.csproj", "{20C49B70-69C0-4EFC-83FE-54A9A27509C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8880EAE0-B04D-44F8-89F4-785C62B34E57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,18 @@ Global
 		{C9CB8856-8B74-4282-9A71-9BF0E8E74A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9CB8856-8B74-4282-9A71-9BF0E8E74A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9CB8856-8B74-4282-9A71-9BF0E8E74A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C49B70-69C0-4EFC-83FE-54A9A27509C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C49B70-69C0-4EFC-83FE-54A9A27509C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C49B70-69C0-4EFC-83FE-54A9A27509C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C49B70-69C0-4EFC-83FE-54A9A27509C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F758B5D2-93C7-4805-BB5C-4970E9F84B0A} = {8880EAE0-B04D-44F8-89F4-785C62B34E57}
+		{C9CB8856-8B74-4282-9A71-9BF0E8E74A65} = {F781F4D2-417C-41AC-AA00-68AB8D9CEF73}
+		{20C49B70-69C0-4EFC-83FE-54A9A27509C3} = {0DC4A237-68C7-4A66-9769-191DD17CEC59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2499306A-5BA4-447E-B15E-248AEBF56E25}
