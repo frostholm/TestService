@@ -1,3 +1,13 @@
+using System.Reflection;
+using Expressbank.TestService.Features.Features.Queries.GetTestValue;
+using Expressbank.TestService.Features.Infrastructure.Pipelines;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 namespace Expressbank.TestService.API
 {
     public class Startup
@@ -18,7 +28,7 @@ namespace Expressbank.TestService.API
         {
             services.AddControllers();
 
-            services.AddMediatR(typeof(GetPlayerQueryHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetTestQueryHandler).GetTypeInfo().Assembly);
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehavior<,>));
             //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));

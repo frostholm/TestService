@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 
 namespace Expressbank.TestService.Features.Features.Queries.GetTestValue
 {
-    public class GetTestHandler
+    public class GetTestQueryHandler
     {
         private readonly IMFTurboTeamsDbContext _context;
 
 
 
-        public GetTestHandler(IMFTurboTeamsDbContext context)
+        public GetTestQueryHandler(IMFTurboTeamsDbContext context)
         {
             _context = context;
         }
